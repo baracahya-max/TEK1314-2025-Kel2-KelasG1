@@ -1,6 +1,42 @@
-| Hostname     | Role           | IP Address     | Network          | OS                        | Open Ports      |
-| ------------ | -------------- | -------------- | ---------------- | ------------------------- | --------------- |
-| PC-Client    | User / Tester  | 192.168.300.30 | 192.168.300.0/24 | Windows                   | -               |
-| Windows-Web  | Target         | 192.168.100.10 | 192.168.100.0/24 | Windows Server      + IIS | 80/tcp, 443/tcp |
-| CyberOps-Sec | IDS / Defender | 192.168.200.20 | 192.168.200.0/24 | Security Onion            | Monitoring Mode |
+# 🖥️ Network Topology Overview
 
+## 📌 Network Hosts Information
+
+| Hostname        | Role              | IP Address       | Network             | Operating System          | Open Ports       |
+|----------------|------------------|------------------|---------------------|--------------------------|------------------|
+| **PC-Client**  | User / Tester     | 192.168.300.30   | 192.168.300.0/24    | Windows                  | -                |
+| **Windows-Web**| Target Server     | 192.168.100.10   | 192.168.100.0/24    | Windows Server + IIS     | 80/tcp, 443/tcp  |
+| **CyberOps-Sec**| IDS / Defender   | 192.168.200.20   | 192.168.200.0/24    | Security Onion           | Monitoring Mode  |
+
+---
+
+## 🌐 Network Segmentation
+
+- **Client Network** : `192.168.300.0/24`
+- **Server Network** : `192.168.100.0/24`
+- **Security Network** : `192.168.200.0/24`
+
+---
+
+## 🔐 Infrastructure Roles
+
+### 🧑‍💻 PC-Client
+Digunakan sebagai user atau penetration tester untuk melakukan pengujian terhadap server target.
+
+### 🌍 Windows-Web
+Server target yang menjalankan layanan web menggunakan IIS.
+- HTTP : Port 80
+- HTTPS : Port 443
+
+### 🛡️ CyberOps-Sec
+Berfungsi sebagai Intrusion Detection System (IDS) menggunakan Security Onion dalam mode monitoring untuk mendeteksi aktivitas mencurigakan pada jaringan.
+
+---
+
+## 📊 Network Topology Diagram
+
+```mermaid
+graph TD
+    A[PC-Client<br>192.168.300.30] -->|HTTP/HTTPS| B[Windows-Web<br>192.168.100.10]
+    C[CyberOps-Sec<br>192.168.200.20] -->|Monitor Traffic| B
+    C -->|Monitor Traffic| A
