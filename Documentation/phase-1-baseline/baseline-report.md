@@ -19,10 +19,10 @@ ping -c 10 192.168.10.11
 ```
 Hasil pengujian menunjukkan bahwa server target dapat merespons permintaan ICMP dengan normal.
 
-Monitoring IDS
+## Monitoring IDS
 
 Selama proses pengujian, sistem Security Onion berhasil mendeteksi lalu lintas ICMP antara mesin tester dan server target, yang menunjukkan bahwa sistem monitoring jaringan telah berjalan dengan baik.
 
-Kesimpulan
+## Kesimpulan
 
 Berdasarkan pengujian baseline, jaringan telah terhubung dengan baik dan sistem monitoring IDS dapat mendeteksi aktivitas jaringan. Lingkungan ini siap digunakan untuk tahap pengujian keamanan selanjutnya.
