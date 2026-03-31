@@ -15,7 +15,13 @@ Lingkungan pengujian dibuat menggunakan beberapa mesin virtual yang terdiri dari
 Pengujian dilakukan menggunakan perintah berikut untuk memastikan koneksi antara tester dan server target berjalan dengan baik.
 
 ```bash
-ping -c 10 192.168.10.11
+sudo hping3 -1 192.168.10.10
+```
+Lalu pada SecOnion untuk mendeteksi lalulintas jaringan menuju Server.
+
+```bash
+sudo tshark -i eth1
+sudo tcpdump -i eth1 udp port 37008 -X
 ```
 Hasil pengujian menunjukkan bahwa server target dapat merespons permintaan ICMP dengan normal.
 
