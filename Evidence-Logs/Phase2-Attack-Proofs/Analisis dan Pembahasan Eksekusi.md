@@ -2,7 +2,7 @@
 
 Pada tahapan ini, dilakukan simulasi serangan ofensif terhadap server target `192.168.2.10` yang menghosting situs web `sman1nusantara.com`. Berikut adalah rincian aktivitas yang terekam pada dokumentasi di atas:
 
-#### 1. Eksekusi Serangan Ofensif (Terminal Kanan - THC-Hydra)
+#### 1. Eksekusi Serangan Ofensif (THC-Hydra)
 * **Metode Serangan:** *Brute Force Attack* terhadap form login HTTP POST (`http-form-post`).
 * **Tools yang Digunakan:** `Hydra v9.2`
 * **Perintah yang Dijalankan:**
