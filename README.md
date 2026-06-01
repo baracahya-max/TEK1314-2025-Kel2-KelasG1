@@ -16,11 +16,11 @@
 
 ## 📌 Network Hosts Information
 
-| Hostname | Role | IP Address | Network | Operating System | Open Ports |
-|----------|------|------------|---------|------------------|------------|
-| **PC-Client** | User / Tester | 192.168.30.10 | 192.168.30.0/24 | Windows | - |
-| **Windows-Web** | Target Server | 192.168.10.10 | 192.168.10.0/24 | Windows Server + IIS | 80/tcp, 443/tcp |
-| **CyberOps-Sec** | IDS / Defender | 192.168.20.10 | 192.168.20.0/24 | Security Onion | Monitoring Mode |
+| Hostname | Role / Fungsi | IP Address | Network Subnet | Operating System |
+| :--- | :--- | :--- | :--- | :--- |
+| **PC-PT Attacker-Kel02G** | Attacker (Penyerang / Penguji) | `192.168.30.10` | `192.168.30.0/24` | Cybersecurity |
+| **PC-PT Defender-Kel02G** | Defender ( / Monitoring) | `192.168.20.10` | `192.168.20.0/24` | Security Onion |
+| **Server-PT Windows-Web-Kel02G** | Target Server | `192.168.2.10` | `192.168.2.0/24` | Windows Server |
 
 # Baseline Report
 
