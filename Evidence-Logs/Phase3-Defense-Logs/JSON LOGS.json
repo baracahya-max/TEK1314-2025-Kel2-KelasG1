@@ -1,0 +1,47 @@
+{
+  "index": "seconion:logstash-import-2026.03.31",
+  "_type": "doc",
+  "_id": "o5t_Q50B3ocOxM2jMzHP",
+  "_version": 1,
+  "_score": null,
+  "_source": {
+    "gid": "1",
+    "interface": "seconion-import-1",
+    "destination_ips": [
+      ""
+    ],
+    "source_ips": [
+      ""
+    ],
+    "sid": 1000001,
+    "path": "/var/log/nsm/securityonion/sguild.log",
+    "rule_type": "ICMP",
+    "event_type": "snort",
+    "alert": "ICMP DETECTED - ALL",
+    "@version": "1",
+    "host": "1fbf65bc9d8d",
+    "timestamp": "2026-03-31T10:44:58.116Z",
+    "rev": "1",
+    "message": "2026-03-31 10:44:44 pid(2372)  Alert Received: 0 0 unknown seconion-import-1 {2026-03-31 10:41:47} 5 2206 {ICMP DETECTED - ALL} {} {} {} {} {} 1 1000001 1 128 128",
+    "priority": "0",
+    "classification": "unknown",
+    "ips": [
+      "",
+      ""
+    ],
+    "tags": [
+      "nids",
+      "import"
+    ],
+    "@timestamp": "2026-03-31T10:41:47.000Z",
+    "category": "detected"
+  },
+  "fields": {
+    "@timestamp": [
+      "2026-03-31T10:41:47.000Z"
+    ]
+  },
+  "sort": [
+    1774953707000
+  ]
+}
