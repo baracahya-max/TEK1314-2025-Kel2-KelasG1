@@ -62,10 +62,9 @@ Pada tahapan **Phase 2 - Attack**, dilakukan simulasi serangan ofensif terhadap 
 
 ---
 
-# 🛡️ Phase 3 - Defense & Hardening Report
 
-## 📌 Deteksi Insiden (Security Onion & Kibana Logs)
-Selama fase serangan berlangsung, tim Blue Team berhasil mengidentifikasi dan merekam aktivitas ilegal tersebut melalui sistem IDS Snort dan visualisasi dasbor Kibana Discover.
+## Deteksi Insiden (Security Onion & Kibana Logs)
+Selama fase **Phase 3** serangan berlangsung, tim Blue Team berhasil mengidentifikasi dan merekam aktivitas ilegal tersebut melalui sistem IDS Snort dan visualisasi dasbor Kibana Discover.
 
 ### 1. Rekaman Log Peringatan Dini (ICMP Sweep Detection)
 Sebelum melancarkan Brute Force, penyerang terdeteksi melakukan *scanning* jaringan menggunakan protokol ICMP untuk memetakan status *up-time* host. Log terstruktur berhasil diekstrak dari `sguild.log` dengan rincian berikut:
@@ -79,7 +78,7 @@ Selain menembak port web (80), dasbor Kibana juga merekam adanya anomali traffic
 
 ---
 
-## 🛠️ Langkah-Langkah Pengerasan Sistem (System Hardening)
+## Langkah-Langkah Pengerasan Sistem (System Hardening)
 Untuk mengatasi kelumpuhan layanan web serta mencegah eksploitasi berulang di masa mendatang, tim Defender telah menerapkan tiga strategi mitigasi utama:
 
 ### 1. Isolasi Instan via Firewall Router (Containment)
