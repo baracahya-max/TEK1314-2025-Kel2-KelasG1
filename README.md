@@ -19,7 +19,7 @@
 | Hostname | Role / Fungsi | IP Address | Network Subnet | Operating System |
 | :--- | :--- | :--- | :--- | :--- |
 | **PC-PT Attacker-Kel02G** | Attacker (Penyerang / Penguji) | `192.168.30.10` | `192.168.30.0/24` | Cybersecurity |
-| **PC-PT Defender-Kel02G** | Defender ( / Monitoring) | `192.168.20.10` | `192.168.20.0/24` | Security Onion |
+| **PC-PT Defender-Kel02G** | Defender (Hardening / Monitoring) | `192.168.20.10` | `192.168.20.0/24` | Security Onion |
 | **Server-PT Windows-Web-Kel02G** | Target Server | `192.168.2.10` | `192.168.2.0/24` | Windows Server |
 
 # Baseline Report
