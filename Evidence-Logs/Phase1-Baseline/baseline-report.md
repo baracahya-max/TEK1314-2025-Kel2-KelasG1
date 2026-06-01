@@ -7,9 +7,9 @@ Lingkungan pengujian dibuat menggunakan beberapa mesin virtual yang terdiri dari
 
 | Hostname | IP Address | Role | OS |
 |----------|------------|------|----|
-| Security Lab VM | 192.168.10.30 | Tester | Linux |
-| Windows Server | 192.168.10.11 | Server Target | Windows |
-| Security Onion | 192.168.10.x | IDS Monitoring | Security Onion |
+| Security Lab VM | 192.168.30.30 | Tester | Linux |
+| Windows Server | 192.168.2.11 | Server Target | Windows |
+| Security Onion | 192.168.20.x | IDS Monitoring | Security Onion |
 
 ## Pengujian Konektivitas
 Pengujian dilakukan menggunakan perintah berikut untuk memastikan koneksi antara tester dan server target berjalan dengan baik.
